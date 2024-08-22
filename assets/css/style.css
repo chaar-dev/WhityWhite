@@ -680,6 +680,7 @@ h6 {
 #hero p {
   margin: 0 auto 30px auto;
   color: #555555;
+  margin-left: 50px;
 }
 
 #hero .carousel-inner .carousel-item {

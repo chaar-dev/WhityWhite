@@ -662,6 +662,7 @@
   #hero p {
     margin: 0 auto 30px auto;
     color: #555555;
+    margin-left: 60px;
   }
   
   #hero .carousel-inner .carousel-item {

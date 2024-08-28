@@ -1987,38 +1987,42 @@
     color: var(--accent-color);
   }
   
-  #d-gallery{
+  #d-gallery {
     position: relative;
-      top: -3px;
-      width: 190%;
-  }
+    top: -3px;
+    width: 196%;
+}
   #d-points{
     position: relative;
-    left: -300px;  
+  top: 4%;
+      right: -30%;
   }
   
-  @media (max-width: 768px) {
+  
+  @media (360px <= width <= 740px) {
     #d-gallery{
       position: relative;
         top: -3px;
         width: 100%;
     }
-    #d-points{
-     left: 1px;
-    }
+    #d-points {
+      position: relative;
+      top: 4%;
+      right: 2%;
+  }
   }
   
   .pulsating-play-btn {
     width: 85px;
     height: 85px;
-    background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+    background: radial-gradient(#43cfb8 50%, color-mix(in srgb, #19cca1, transparent 75%) 52%);
     border-radius: 50%;
     display: block;
     position: absolute;
-    left: 27%;
-    top: 16%;
+    left: 30%;
+    top: 30%;
     overflow: hidden;
-  }
+}
 
 
 section {
@@ -2040,7 +2044,7 @@ p{
 
 
 
-@media (max-width:766px) {
+@media (360px <= width <= 740px) {
     .pulsating-play-btn {
         width: 85px;
         height: 85px;
@@ -2073,7 +2077,7 @@ p{
     left: 20%;
 }
 
-@media (max-width:766px) {
+@media (360px <= width <= 740px) {
       .sh2{
         left: 1%;
       }
@@ -2083,11 +2087,11 @@ p{
     .shaar {
       max-width: 61%;  
   }
-  #hero .carousel-inner .carousel-item p {
-    position: absolute;
-    text-align: center;
-    left: 25%;
-}
+    #hero .carousel-inner .carousel-item p {
+        position: absolute;
+        text-align: center;
+        left: 15%;
+    }
 .sh2{
   position: relative;
         left: -19%;
@@ -2110,7 +2114,8 @@ p{
 }
 #d-points {
   position: relative;
-  left: 109px;
+  top: 4%;
+  right: -12%;
 }
 .swiper{
   margin-bottom: 2%;

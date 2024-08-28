@@ -2003,7 +2003,7 @@ section {
   left: -300px;  
 }
 
-@media (max-width: 768px) {
+@media (360px <= width <= 740px) {
   #d-gallery{
     position: relative;
       top: -3px;
@@ -2017,12 +2017,12 @@ section {
 .pulsating-play-btn {
   width: 85px;
   height: 85px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(#43cfb8 50%, color-mix(in srgb, #19cca1, transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
-  left: 27%;
-  top: 16%;
+  left: 30%;
+  top: 30%;
   overflow: hidden;
 }
 
@@ -2040,18 +2040,17 @@ section {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (360px <= width <= 740px) {
   .mobile-nav-toggle{
     display: block;
   }
 }
 
-@media (360 <= width <= 740px) {
+@media (360px <= width <= 740px) {
   .pulsating-play-btn {
       width: 85px;
       height: 85px;
-      background: radial-gradient(var(--accent-color) 50%, 
-  color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+      background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
       border-radius: 50%;
       display: block;
       position: absolute;
@@ -2071,11 +2070,11 @@ section {
     text-align: center;
     left: 19%;
 }
-#hero .carousel-inner .carousel-item p {
-  position: absolute;
-  text-align: center;
-  left: 23%;
-}
+  #hero .carousel-inner .carousel-item p {
+      position: absolute;
+      text-align: center;
+      left: 17%;
+  }
 .sh2{
 position: relative;    
     top: -39%;

@@ -203,38 +203,66 @@
     }
   }
   
-  /*--------------------------------------------------------------
-  # Top Bar
-  --------------------------------------------------------------*/
-  #topbar {
-    background: #3fbbc0;
-    color: #fff;
-    height: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    z-index: 996;
-    transition: all 0.5s;
-  }
-  
-  #topbar.topbar-scrolled {
-    top: -40px;
-  }
-  
-  #topbar i {
-    padding-right: 6px;
-    line-height: 0;
-  }
+
+ /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  /* margin-bottom: 7px; */
+  background: #34a5ad;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+  position: relative;
+  z-index: 999;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+#topbar .social-links a:hover {
+  color: white;
+}
   
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
   #header {
     background: #fff;
+    position: relative;
     transition: all 0.5s;
     z-index: 997;
     padding: 14px 0;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
+}
   
   @media (max-width: 992px) {
     #header {
@@ -518,7 +546,7 @@
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: 100vh;
+    height: 82vh;
     background-color: rgba(60, 60, 60, 0.8);
     overflow: hidden;
     position: relative;
@@ -1355,7 +1383,44 @@
       opacity: 1;
     }
   }
+
+  #d-gallery {
+    position: relative;
+    top: -3px;
+    width: 196%;
+}
+  #d-points{
+    position: relative;
+  top: 4%;
+      right: -30%;
+  }
   
+  
+  @media (360px <= width <= 740px) {
+    #d-gallery{
+      position: relative;
+        top: -3px;
+        width: 100%;
+    }
+    #d-points {
+      position: relative;
+      top: 4%;
+      right: 2%;
+  }
+  }
+
+  @media (766px <= width <= 991px) {
+    #d-gallery {
+      position: relative;
+      top: -3px;
+      width: 130%;
+    }
+    #d-points {
+      position: relative;
+      top: 4%;
+      right: -12%;
+    }
+  }
   /*--------------------------------------------------------------
   # Testimonials
   --------------------------------------------------------------*/

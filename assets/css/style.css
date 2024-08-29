@@ -207,22 +207,47 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #3fbbc0;
-  color: #fff;
+  background: #34a5ad;
   height: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  z-index: 996;
+  font-size: 14px;
   transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+  position: relative;
+  z-index: 999;
 }
 
-#topbar.topbar-scrolled {
-  top: -40px;
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
 }
 
-#topbar i {
-  padding-right: 6px;
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#topbar .contact-info i a {
   line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+#topbar .social-links a:hover {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -234,6 +259,7 @@ h6 {
   z-index: 997;
   padding: 14px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 @media (max-width: 992px) {
@@ -1351,6 +1377,50 @@ section {
 
   100% {
     opacity: 1;
+  }
+}
+
+#d-gallery{
+  position: relative;
+    top: -3px;
+    width: 190%;
+}
+#d-points{
+  position: relative;
+  left: -300px;  
+}
+
+@media (360px <= width <= 740px) {
+  #d-gallery{
+    position: relative;
+      top: -3px;
+      width: 100%;
+  }
+  #d-points{
+   left: 1px;
+  }
+}
+
+@media (766px <= width <= 991px) {
+  #d-gallery {
+    position: relative;
+    top: -3px;
+    width: 130%;
+    }
+    #d-points {
+    position: relative;
+    left: -80px;
+    }
+}
+
+@media (360px <= width <= 740px) {
+  #d-gallery{
+    position: relative;
+      top: -3px;
+      width: 100%;
+  }
+  #d-points{
+   left: 1px;
   }
 }
 
